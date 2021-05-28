@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mealapp/screens/categories_screen.dart';
 import 'package:mealapp/screens/fav_screen.dart';
+import 'package:mealapp/widgets/main_drawer.dart';
 
 class Tab_screen extends StatefulWidget {
   const Tab_screen({Key key}) : super(key: key);
@@ -42,7 +43,7 @@ class _Tab_screenState extends State<Tab_screen> {
               icon: Icon(Icons.favorite_border), title: Text("Favorite"))
         ],
       ),
-      drawer: Container(),
+      drawer: MainDrawer(),
     );
   }
 }
